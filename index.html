@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <title>E-commerce product page</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <!-- Fonts Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Kumbh+Sans:wght@400;500;600;700;800&family=Rubik:ital,wght@0,400;0,700;1,500;1,600&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="nav">
+        <div class="nav-bar">
+          <img style="cursor: pointer; width: 20px;" src="images/icon-menu.svg" alt="">
+        </div>
+        <div class="logo">
+          <img src="images/logo.svg" alt="">
+        </div>
+        <ul>
+          <li class="close">
+            <img src="images/icon-close.svg" alt="">
+          </li>
+          <li><a href="#">Collections</a></li>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="profile">
+        <div class="cart">
+          <span class="number">0</span>
+          <img src="images/icon-cart.svg" alt="">
+          <div class="order">
+            <div class="head">
+              Cart
+            </div>
+            <div class="section">
+              <div class="empty">
+                Your cart is empty.
+              </div>
+              <div class="detail-order">
+                <div class="info">
+                  <img class="thumbnail" src="images/image-product-1-thumbnail.jpg" alt="">
+                  <div class="text">
+                    <p class="desc">Fall Limited Edition Sneakers</p>
+                    <p class="price">$125.00 x <span class="quantity">0 </span><span class="total">
+                        $<span>0</span></span></p>
+                  </div>
+                  <img class="delete" src="images/icon-delete.svg" alt="">
+                </div>
+                <button>Checkout</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img class="photo" src="images/image-avatar.png" alt="">
+      </div>
+    </div>
+  </header>
+  <div class="landing">
+    <div class="container">
+      <div class="products">
+        <div class="product" data-carousel>
+          <div class="prev" data-carousel-btns="prev">
+            <i><i class="fas fa-angle-left"></i></i>
+          </div>
+          <div class="imgs" data-slides>
+            <img class="poduct1 open" src="images/image-product-1.jpg" alt="">
+            <img class="poduct2" src="images/image-product-2.jpg" alt="">
+            <img class="poduct3" src="images/image-product-3.jpg" alt="">
+            <img class="poduct4" src="images/image-product-4.jpg" alt="">
+          </div>
+          <div class="next" data-carousel-btns="next">
+            <i class="fas fa-angle-right"></i>
+          </div>
+        </div>
+        <div class="chose">
+          <div data-cat=".poduct1" class="open">
+            <img src="images/image-product-1-thumbnail.jpg" alt="">
+          </div>
+          <div data-cat=".poduct2">
+            <img src="images/image-product-2-thumbnail.jpg" alt="">
+          </div>
+          <div data-cat=".poduct3">
+            <img src="images/image-product-3-thumbnail.jpg" alt="">
+          </div>
+          <div data-cat=".poduct4">
+            <img src="images/image-product-4-thumbnail.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="info-product">
+        <div class="head">
+          <p>Sneaker Company</p>
+          <h1>Fall Limited Edition Sneakers</h1>
+        </div>
+        <div class="text">
+          <p class="descrption">These low-profile sneakers are your perfect casual wear companion. Featuring a
+            durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+          <div class="prices">
+            <p class="price">$125.00</p>
+            <span>$250.00</span>
+          </div>
+        </div>
+        <div class="add">
+          <div class="number">
+            <i class="fas fa-minus"></i>
+            <span>1</span>
+            <i class="fas fa-plus"></i>
+          </div>
+          <button> <i class="fa fa-cart-arrow-down" aria-hidden="true"></i> Add to cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="images">
+    <div class="close">
+      <i class="fa fa-times" aria-hidden="true"></i>
+    </div>
+    <div class="image" data-carousel>
+      <div class="prev" data-carousel-button="prev">
+        <i><i class="fas fa-angle-left"></i></i>
+      </div>
+      <div class="imgs" data-slides>
+        <img class="product1 open" src="images/image-product-1.jpg" alt="">
+        <img class="product2" src="images/image-product-2.jpg" alt="">
+        <img class="product3" src="images/image-product-3.jpg" alt="">
+        <img class="product4" src="images/image-product-4.jpg" alt="">
+      </div>
+      <div class="next" data-carousel-button="next">
+        <i class="fas fa-angle-right"></i>
+      </div>
+    </div>
+    <div class="chose">
+      <div data-cat=".product1" class="open">
+        <img src="images/image-product-1-thumbnail.jpg" alt="">
+      </div>
+      <div data-cat=".product2">
+        <img src="images/image-product-2-thumbnail.jpg" alt="">
+      </div>
+      <div data-cat=".product3">
+        <img src="images/image-product-3-thumbnail.jpg" alt="">
+      </div>
+      <div data-cat=".product4">
+        <img src="images/image-product-4-thumbnail.jpg" alt="">
+      </div>
+    </div>
+    <!-- 
+  0
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+    <script src="main.js" defer></script>
+</body>
+
+</html>

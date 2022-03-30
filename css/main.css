@@ -18,8 +18,12 @@
 }
 body {
   font-family: "Kumbh Sans", sans-serif;
-  padding-bottom: 40px;
   position: relative;
+}
+@media (max-width: 767px) {
+  body {
+    padding-bottom: 40px;
+  }
 }
 .container {
   padding-left: 15px;
@@ -114,7 +118,7 @@ header .nav ul {
     display: flex;
     animation: navActive 0.5s ease;
   }
-  header .nav ul.active::before {
+  /* header .nav ul.active::before {
     content: "";
     position: absolute;
     width: 142px;
@@ -123,7 +127,20 @@ header .nav ul {
     right: -142px;
     opacity: 0;
     animation: waitForAdd 0.5s 0.3s forwards ease;
-  }
+  } */
+}
+.closeDivs {
+  display: none;
+}
+.closeDivs.open {
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  min-height: 118vh;
+  background-color: hsl(0deg 0% 0% / 75%);
+  z-index: 1;
+  animation: navActive 0.5s ease;
 }
 header .nav ul .close {
   display: none;
@@ -635,7 +652,7 @@ header .profile .cart .number {
   top: 0;
   padding-top: 84px;
   padding-bottom: 40px;
-  background-color: hsl(0deg 0% 0% / 75%);
+  /* background-color: hsl(0deg 0% 0% / 75%); */
   width: 100%;
   min-height: 100vh;
   opacity: 0;
@@ -723,7 +740,26 @@ header .profile .cart .number {
   margin-top: 40px;
   max-width: 500px;
 }
-
+.images .closeImages {
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+  background-color: hsl(0deg 0% 0% / 75%);
+  top: 0;
+  opacity: 0;
+  z-index: -2;
+}
+@media (max-width: 767px) {
+  .images .closeImages {
+    display: none;
+  }
+}
+.images .closeImages.open {
+  display: block;
+  opacity: 1;
+  z-index: 0;
+  animation: iamgesOpen 0.5s ease;
+}
 @keyframes navActive {
   from {
     transform: translateX(-100%);

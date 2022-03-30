@@ -13,19 +13,25 @@ let openImage = document.querySelector(".images");
 let openImageimg = document.querySelectorAll(".images .image img");
 let close = document.querySelector(".images .close i");
 let choseImages = document.querySelectorAll(".images .chose div");
+let closeImages = document.querySelector(".images .closeImages");
+let closeDivs = document.querySelector(".closeDivs");
 
 
 menu.onclick = function () {
     nav.classList.add("active");
-    document.body.style.overflowY = "clip";
+    closeDivs.classList.add("open")
+    document.body.style.overflowY = "hidden";
 }
 
 navClose.addEventListener("click", removeClass);
 
 function removeClass() {
     navClose.parentElement.classList.remove("active");
+    closeDivs.classList.remove("open")
     document.body.style.overflowY = "auto";
 }
+
+closeDivs.onclick = removeClass;
 
 cart.onclick = function () {
     order.classList.toggle("active");
@@ -58,10 +64,18 @@ image.forEach((img) => {
 
 function openImages() {
     openImage.classList.add("open");
+    closeImages.classList.add("open");
 }
 
 close.onclick = function () {
     openImage.classList.remove("open");
+    closeImages.classList.remove("open");
+}
+
+closeImages.onclick = function () {
+    openImage.classList.remove("open");
+    closeImages.classList.remove("open");
+    nav.classList.remove("active");
 }
 
 choseImages.forEach((img) => {

@@ -54,8 +54,8 @@ ul {
 }
 
 header .container {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 25px;
+  padding-bottom: 25px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -117,10 +117,10 @@ header .nav ul {
   header .nav ul.active::before {
     content: "";
     position: absolute;
-    width: 132px;
+    width: 142px;
     height: 100%;
     background-color: hsl(0deg 0% 0% / 75%);
-    right: -132px;
+    right: -142px;
     opacity: 0;
     animation: waitForAdd 0.5s 0.3s forwards ease;
   }
@@ -170,7 +170,7 @@ header .nav ul a::before {
   height: 4px;
   opacity: 0;
   background-color: var(--Orange);
-  bottom: -42px;
+  bottom: -41px;
   transition: var(--transition);
 }
 @media (max-width: 767px) {
@@ -188,8 +188,8 @@ header .profile {
   position: relative;
 }
 header .profile .photo {
-  width: 40px;
-  margin-left: 40px;
+  width: 50px;
+  margin-left: 33px;
   border: 2px solid transparent;
   border-radius: 50%;
   cursor: pointer;

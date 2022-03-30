@@ -228,8 +228,8 @@ header .profile .cart .order {
 }
 @media (max-width: 767px) {
   header .profile .cart .order {
-    width: 375px;
-    left: -1155%;
+    width: 350px;
+    left: -1036%;
   }
 }
 header .profile .cart .order.active {
